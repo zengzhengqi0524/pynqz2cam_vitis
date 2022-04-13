@@ -1,0 +1,880 @@
+Nothing to build in platform 'design_1_wrapper'
+
+18:29:46 **** Incremental Build of configuration Debug for project cam2hdmi ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/ov2640/ov2640.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov2640/ov2640.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/pynqz2cam/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/ov2640/ov2640.d" -MT"src/ov2640/ov2640.o" -o "src/ov2640/ov2640.o" "../src/ov2640/ov2640.c"
+In file included from ../src/ov2640/ov2640.c:3:
+../src/ov2640/ov2640cfg.h:7:1: warning: missing braces around initializer [-Wmissing-braces]
+ {
+ ^
+  0xff, 0x00,
+  {         }
+  0x2c, 0xff,
+  {         }
+  0x2e, 0xdf,
+  {         }
+  0xff, 0x01,
+  {         }
+  0x3c, 0x32,
+  {         }
+../src/ov2640/ov2640cfg.h:14:2:
+  0x11, 0x00,
+  {         }
+  0x09, 0x02,
+  {         }
+  0x04, 0xD8,//水平镜像,垂直翻转
+  {         }
+  0x13, 0xe5,
+  {         }
+  0x14, 0x48,
+  {         }
+  0x2c, 0x0c,
+  {         }
+  0x33, 0x78,
+  {         }
+  0x3a, 0x33,
+  {         }
+  0x3b, 0xfB,
+  {         }
+../src/ov2640/ov2640cfg.h:24:2:
+  0x3e, 0x00,
+  {         }
+  0x43, 0x11,
+  {         }
+  0x16, 0x10,
+  {         }
+../src/ov2640/ov2640cfg.h:28:2:
+  0x39, 0x92,
+  {         }
+../src/ov2640/ov2640cfg.h:30:2:
+  0x35, 0xda,
+  {         }
+  0x22, 0x1a,
+  {         }
+  0x37, 0xc3,
+  {         }
+  0x23, 0x00,
+  {         }
+  0x34, 0xc0,
+  {         }
+  0x36, 0x1a,
+  {         }
+  0x06, 0x88,
+  {         }
+  0x07, 0xc0,
+  {         }
+  0x0d, 0x87,
+  {         }
+  0x0e, 0x41,
+  {         }
+  0x4c, 0x00,
+  {         }
+../src/ov2640/ov2640cfg.h:42:2:
+  0x48, 0x00,
+  {         }
+  0x5B, 0x00,
+  {         }
+  0x42, 0x03,
+  {         }
+../src/ov2640/ov2640cfg.h:46:2:
+  0x4a, 0x81,
+  {         }
+  0x21, 0x99,
+  {         }
+../src/ov2640/ov2640cfg.h:49:2:
+  0x24, 0x40,
+  {         }
+  0x25, 0x38,
+  {         }
+  0x26, 0x82,
+  {         }
+  0x5c, 0x00,
+  {         }
+  0x63, 0x00,
+  {         }
+  0x46, 0x00,
+  {         }
+  0x0c, 0x3c,
+  {         }
+../src/ov2640/ov2640cfg.h:57:2:
+  0x61, 0x70,
+  {         }
+  0x62, 0x80,
+  {         }
+  0x7c, 0x05,
+  {         }
+../src/ov2640/ov2640cfg.h:61:2:
+  0x20, 0x80,
+  {         }
+  0x28, 0x30,
+  {         }
+  0x6c, 0x00,
+  {         }
+  0x6d, 0x80,
+  {         }
+  0x6e, 0x00,
+  {         }
+  0x70, 0x02,
+  {         }
+  0x71, 0x94,
+  {         }
+  0x73, 0xc1,
+  {         }
+  0x3d, 0x34,
+  {         }
+  0x5a, 0x57,
+  {         }
+../src/ov2640/ov2640cfg.h:72:2:
+  0x12, 0x00,//UXGA 1600*1200
+  {         }
+../src/ov2640/ov2640cfg.h:74:2:
+  0x17, 0x11,
+  {         }
+  0x18, 0x75,
+  {         }
+  0x19, 0x01,
+  {         }
+  0x1a, 0x97,
+  {         }
+  0x32, 0x36,
+  {         }
+  0x03, 0x0f,
+  {         }
+  0x37, 0x40,
+  {         }
+../src/ov2640/ov2640cfg.h:82:2:
+  0x4f, 0xca,
+  {         }
+  0x50, 0xa8,
+  {         }
+  0x5a, 0x23,
+  {         }
+  0x6d, 0x00,
+  {         }
+  0x6d, 0x38,
+  {         }
+../src/ov2640/ov2640cfg.h:88:2:
+  0xff, 0x00,
+  {         }
+  0xe5, 0x7f,
+  {         }
+  0xf9, 0xc0,
+  {         }
+  0x41, 0x24,
+  {         }
+  0xe0, 0x14,
+  {         }
+  0x76, 0xff,
+  {         }
+  0x33, 0xa0,
+  {         }
+  0x42, 0x20,
+  {         }
+  0x43, 0x18,
+  {         }
+  0x4c, 0x00,
+  {         }
+  0x87, 0xd5,
+  {         }
+  0x88, 0x3f,
+  {         }
+  0xd7, 0x03,
+  {         }
+  0xd9, 0x10,
+  {         }
+  0xd3, 0x82,
+  {         }
+../src/ov2640/ov2640cfg.h:104:2:
+  0xc8, 0x08,
+  {         }
+  0xc9, 0x80,
+  {         }
+../src/ov2640/ov2640cfg.h:107:2:
+  0x7c, 0x00,
+  {         }
+  0x7d, 0x00,
+  {         }
+  0x7c, 0x03,
+  {         }
+  0x7d, 0x48,
+  {         }
+  0x7d, 0x48,
+  {         }
+  0x7c, 0x08,
+  {         }
+  0x7d, 0x20,
+  {         }
+  0x7d, 0x10,
+  {         }
+  0x7d, 0x0e,
+  {         }
+../src/ov2640/ov2640cfg.h:117:2:
+  0x90, 0x00,
+  {         }
+  0x91, 0x0e,
+  {         }
+  0x91, 0x1a,
+  {         }
+  0x91, 0x31,
+  {         }
+  0x91, 0x5a,
+  {         }
+  0x91, 0x69,
+  {         }
+  0x91, 0x75,
+  {         }
+  0x91, 0x7e,
+  {         }
+  0x91, 0x88,
+  {         }
+  0x91, 0x8f,
+  {         }
+  0x91, 0x96,
+  {         }
+  0x91, 0xa3,
+  {         }
+  0x91, 0xaf,
+  {         }
+  0x91, 0xc4,
+  {         }
+  0x91, 0xd7,
+  {         }
+  0x91, 0xe8,
+  {         }
+  0x91, 0x20,
+  {         }
+../src/ov2640/ov2640cfg.h:135:2:
+  0x92, 0x00,
+  {         }
+  0x93, 0x06,
+  {         }
+  0x93, 0xe3,
+  {         }
+  0x93, 0x05,
+  {         }
+  0x93, 0x05,
+  {         }
+  0x93, 0x00,
+  {         }
+  0x93, 0x04,
+  {         }
+  0x93, 0x00,
+  {         }
+  0x93, 0x00,
+  {         }
+  0x93, 0x00,
+  {         }
+  0x93, 0x00,
+  {         }
+  0x93, 0x00,
+  {         }
+  0x93, 0x00,
+  {         }
+  0x93, 0x00,
+  {         }
+../src/ov2640/ov2640cfg.h:150:2:
+  0x96, 0x00,
+  {         }
+  0x97, 0x08,
+  {         }
+  0x97, 0x19,
+  {         }
+  0x97, 0x02,
+  {         }
+  0x97, 0x0c,
+  {         }
+  0x97, 0x24,
+  {         }
+  0x97, 0x30,
+  {         }
+  0x97, 0x28,
+  {         }
+  0x97, 0x26,
+  {         }
+  0x97, 0x02,
+  {         }
+  0x97, 0x98,
+  {         }
+  0x97, 0x80,
+  {         }
+  0x97, 0x00,
+  {         }
+  0x97, 0x00,
+  {         }
+../src/ov2640/ov2640cfg.h:165:2:
+  0xc3, 0xef,
+  {         }
+../src/ov2640/ov2640cfg.h:167:2:
+  0xa4, 0x00,
+  {         }
+  0xa8, 0x00,
+  {         }
+  0xc5, 0x11,
+  {         }
+  0xc6, 0x51,
+  {         }
+  0xbf, 0x80,
+  {         }
+  0xc7, 0x10,
+  {         }
+  0xb6, 0x66,
+  {         }
+  0xb8, 0xA5,
+  {         }
+  0xb7, 0x64,
+  {         }
+  0xb9, 0x7C,
+  {         }
+  0xb3, 0xaf,
+  {         }
+  0xb4, 0x97,
+  {         }
+  0xb5, 0xFF,
+  {         }
+  0xb0, 0xC5,
+  {         }
+  0xb1, 0x94,
+  {         }
+  0xb2, 0x0f,
+  {         }
+  0xc4, 0x5c,
+  {         }
+../src/ov2640/ov2640cfg.h:185:2:
+  0xc0, 0xc8,
+  {         }
+  0xc1, 0x96,
+  {         }
+  0x8c, 0x00,
+  {         }
+  0x86, 0x3d,
+  {         }
+  0x50, 0x00,
+  {         }
+  0x51, 0x90,
+  {         }
+  0x52, 0x2c,
+  {         }
+  0x53, 0x00,
+  {         }
+  0x54, 0x00,
+  {         }
+  0x55, 0x88,
+  {         }
+../src/ov2640/ov2640cfg.h:196:2:
+  0x5a, 0x90,
+  {         }
+  0x5b, 0x2C,
+  {         }
+  0x5c, 0x05,
+  {         }
+../src/ov2640/ov2640cfg.h:200:2:
+  0xd3, 0x02,//auto设置要小�?
+  {         }
+../src/ov2640/ov2640cfg.h:202:2:
+  0xc3, 0xed,
+  {         }
+  0x7f, 0x00,
+  {         }
+../src/ov2640/ov2640cfg.h:205:2:
+  0xda, 0x09,
+  {         }
+../src/ov2640/ov2640cfg.h:207:2:
+  0xe5, 0x1f,
+  {         }
+  0xe1, 0x67,
+  {         }
+  0xe0, 0x00,
+  {         }
+  0xdd, 0x7f,
+  {         }
+  0x05, 0x00,
+  {
+ };
+ }
+../src/ov2640/ov2640cfg.h:218:1: warning: missing braces around initializer [-Wmissing-braces]
+ {
+ ^
+  0xff, 0x00,
+  {         }
+  0x2c, 0xff,
+  {         }
+  0x2e, 0xdf,
+  {         }
+  0xff, 0x01,
+  {         }
+  0x3c, 0x32,
+  {         }
+../src/ov2640/ov2640cfg.h:225:2:
+  0x11, 0x00,
+  {         }
+  0x09, 0x02,
+  {         }
+  0x04, 0xD8,//水平镜像,垂直翻转
+  {         }
+  0x13, 0xe5,
+  {         }
+  0x14, 0x48,
+  {         }
+  0x2c, 0x0c,
+  {         }
+  0x33, 0x78,
+  {         }
+  0x3a, 0x33,
+  {         }
+  0x3b, 0xfB,
+  {         }
+../src/ov2640/ov2640cfg.h:235:2:
+  0x3e, 0x00,
+  {         }
+  0x43, 0x11,
+  {         }
+  0x16, 0x10,
+  {         }
+../src/ov2640/ov2640cfg.h:239:2:
+  0x39, 0x92,
+  {         }
+../src/ov2640/ov2640cfg.h:241:2:
+  0x35, 0xda,
+  {         }
+  0x22, 0x1a,
+  {         }
+  0x37, 0xc3,
+  {         }
+  0x23, 0x00,
+  {         }
+  0x34, 0xc0,
+  {         }
+  0x36, 0x1a,
+  {         }
+  0x06, 0x88,
+  {         }
+  0x07, 0xc0,
+  {         }
+  0x0d, 0x87,
+  {         }
+  0x0e, 0x41,
+  {         }
+  0x4c, 0x00,
+  {         }
+  0x48, 0x00,
+  {         }
+  0x5B, 0x00,
+  {         }
+  0x42, 0x03,
+  {         }
+../src/ov2640/ov2640cfg.h:256:2:
+  0x4a, 0x81,
+  {         }
+  0x21, 0x99,
+  {         }
+../src/ov2640/ov2640cfg.h:259:2:
+  0x24, 0x40,
+  {         }
+  0x25, 0x38,
+  {         }
+  0x26, 0x82,
+  {         }
+  0x5c, 0x00,
+  {         }
+  0x63, 0x00,
+  {         }
+  0x46, 0x22,
+  {         }
+  0x0c, 0x3c,
+  {         }
+../src/ov2640/ov2640cfg.h:267:2:
+  0x61, 0x70,
+  {         }
+  0x62, 0x80,
+  {         }
+  0x7c, 0x05,
+  {         }
+../src/ov2640/ov2640cfg.h:271:2:
+  0x20, 0x80,
+  {         }
+  0x28, 0x30,
+  {         }
+  0x6c, 0x00,
+  {         }
+  0x6d, 0x80,
+  {         }
+  0x6e, 0x00,
+  {         }
+  0x70, 0x02,
+  {         }
+  0x71, 0x94,
+  {         }
+  0x73, 0xc1,
+  {         }
+../src/ov2640/ov2640cfg.h:280:2:
+  0x3d, 0x34,
+  {         }
+  0x5a, 0x57,
+  {         }
+../src/ov2640/ov2640cfg.h:283:2:
+  0x12, 0x40,//SVGA 800*600
+  {         }
+  0x17, 0x11,
+  {         }
+  0x18, 0x43,
+  {         }
+  0x19, 0x00,
+  {         }
+  0x1a, 0x4b,
+  {         }
+  0x32, 0x09,
+  {         }
+  0x37, 0xc0,
+  {         }
+../src/ov2640/ov2640cfg.h:291:2:
+  0x4f, 0xca,
+  {         }
+  0x50, 0xa8,
+  {         }
+  0x5a, 0x23,
+  {         }
+  0x6d, 0x00,
+  {         }
+  0x3d, 0x38,
+  {         }
+../src/ov2640/ov2640cfg.h:297:2:
+  0xff, 0x00,
+  {         }
+  0xe5, 0x7f,
+  {         }
+  0xf9, 0xc0,
+  {         }
+  0x41, 0x24,
+  {         }
+  0xe0, 0x14,
+  {         }
+  0x76, 0xff,
+  {         }
+  0x33, 0xa0,
+  {         }
+  0x42, 0x20,
+  {         }
+  0x43, 0x18,
+  {         }
+  0x4c, 0x00,
+  {         }
+  0x87, 0xd5,
+  {         }
+  0x88, 0x3f,
+  {         }
+  0xd7, 0x03,
+  {         }
+  0xd9, 0x10,
+  {         }
+  0xd3, 0x82,
+  {         }
+../src/ov2640/ov2640cfg.h:313:2:
+  0xc8, 0x08,
+  {         }
+  0xc9, 0x80,
+  {         }
+../src/ov2640/ov2640cfg.h:316:2:
+  0x7c, 0x00,
+  {         }
+  0x7d, 0x00,
+  {         }
+  0x7c, 0x03,
+  {         }
+  0x7d, 0x48,
+  {         }
+  0x7d, 0x48,
+  {         }
+  0x7c, 0x08,
+  {         }
+  0x7d, 0x20,
+  {         }
+  0x7d, 0x10,
+  {         }
+  0x7d, 0x0e,
+  {         }
+../src/ov2640/ov2640cfg.h:326:2:
+  0x90, 0x00,
+  {         }
+  0x91, 0x0e,
+  {         }
+  0x91, 0x1a,
+  {         }
+  0x91, 0x31,
+  {         }
+  0x91, 0x5a,
+  {         }
+  0x91, 0x69,
+  {         }
+  0x91, 0x75,
+  {         }
+  0x91, 0x7e,
+  {         }
+  0x91, 0x88,
+  {         }
+  0x91, 0x8f,
+  {         }
+  0x91, 0x96,
+  {         }
+  0x91, 0xa3,
+  {         }
+  0x91, 0xaf,
+  {         }
+  0x91, 0xc4,
+  {         }
+  0x91, 0xd7,
+  {         }
+  0x91, 0xe8,
+  {         }
+  0x91, 0x20,
+  {         }
+../src/ov2640/ov2640cfg.h:344:2:
+  0x92, 0x00,
+  {         }
+  0x93, 0x06,
+  {         }
+  0x93, 0xe3,
+  {         }
+  0x93, 0x05,
+  {         }
+  0x93, 0x05,
+  {         }
+  0x93, 0x00,
+  {         }
+  0x93, 0x04,
+  {         }
+  0x93, 0x00,
+  {         }
+  0x93, 0x00,
+  {         }
+  0x93, 0x00,
+  {         }
+  0x93, 0x00,
+  {         }
+  0x93, 0x00,
+  {         }
+  0x93, 0x00,
+  {         }
+  0x93, 0x00,
+  {         }
+../src/ov2640/ov2640cfg.h:359:2:
+  0x96, 0x00,
+  {         }
+  0x97, 0x08,
+  {         }
+  0x97, 0x19,
+  {         }
+  0x97, 0x02,
+  {         }
+  0x97, 0x0c,
+  {         }
+  0x97, 0x24,
+  {         }
+  0x97, 0x30,
+  {         }
+  0x97, 0x28,
+  {         }
+  0x97, 0x26,
+  {         }
+  0x97, 0x02,
+  {         }
+  0x97, 0x98,
+  {         }
+  0x97, 0x80,
+  {         }
+  0x97, 0x00,
+  {         }
+  0x97, 0x00,
+  {         }
+../src/ov2640/ov2640cfg.h:374:2:
+  0xc3, 0xed,
+  {         }
+  0xa4, 0x00,
+  {         }
+  0xa8, 0x00,
+  {         }
+  0xc5, 0x11,
+  {         }
+  0xc6, 0x51,
+  {         }
+  0xbf, 0x80,
+  {         }
+  0xc7, 0x10,
+  {         }
+  0xb6, 0x66,
+  {         }
+  0xb8, 0xA5,
+  {         }
+  0xb7, 0x64,
+  {         }
+  0xb9, 0x7C,
+  {         }
+  0xb3, 0xaf,
+  {         }
+  0xb4, 0x97,
+  {         }
+  0xb5, 0xFF,
+  {         }
+  0xb0, 0xC5,
+  {         }
+  0xb1, 0x94,
+  {         }
+  0xb2, 0x0f,
+  {         }
+  0xc4, 0x5c,
+  {         }
+../src/ov2640/ov2640cfg.h:393:2:
+  0xc0, 0x64,
+  {         }
+  0xc1, 0x4B,
+  {         }
+  0x8c, 0x00,
+  {         }
+  0x86, 0x3D,
+  {         }
+  0x50, 0x00,
+  {         }
+  0x51, 0xC8,
+  {         }
+  0x52, 0x96,
+  {         }
+  0x53, 0x00,
+  {         }
+  0x54, 0x00,
+  {         }
+  0x55, 0x00,
+  {         }
+  0x5a, 0xC8,
+  {         }
+  0x5b, 0x96,
+  {         }
+  0x5c, 0x00,
+  {         }
+../src/ov2640/ov2640cfg.h:407:2:
+  0xd3, 0x02,//auto设置要小�?
+  {         }
+../src/ov2640/ov2640cfg.h:409:2:
+  0xc3, 0xed,
+  {         }
+  0x7f, 0x00,
+  {         }
+../src/ov2640/ov2640cfg.h:412:2:
+  0xda, 0x09,
+  {         }
+../src/ov2640/ov2640cfg.h:414:2:
+  0xe5, 0x1f,
+  {         }
+  0xe1, 0x67,
+  {         }
+  0xe0, 0x00,
+  {         }
+  0xdd, 0x7f,
+  {         }
+  0x05, 0x00,
+  {
+ };
+ }
+../src/ov2640/ov2640cfg.h:423:1: warning: missing braces around initializer [-Wmissing-braces]
+ {
+ ^
+  0xFF, 0x00,
+  {         }
+  0xDA, 0x10,
+  {         }
+  0xD7, 0x03,
+  {         }
+  0xDF, 0x00,
+  {         }
+  0x33, 0x80,
+  {         }
+  0x3C, 0x40,
+  {         }
+  0xe1, 0x77,
+  {         }
+  0x00, 0x00,
+  {
+ };
+ }
+../src/ov2640/ov2640cfg.h:434:1: warning: missing braces around initializer [-Wmissing-braces]
+ {
+ ^
+  0xff, 0x01,
+  {         }
+  0xe0, 0x14,
+  {         }
+  0xe1, 0x77,
+  {         }
+  0xe5, 0x1f,
+  {         }
+  0xd7, 0x03,
+  {         }
+  0xda, 0x10,
+  {         }
+  0xe0, 0x00,
+  {
+ };
+ }
+../src/ov2640/ov2640cfg.h:444:1: warning: missing braces around initializer [-Wmissing-braces]
+ {
+ ^
+  0xFF, 0x00,
+  {         }
+  0xDA, 0x09,
+  {         }
+  0xD7, 0x03,
+  {         }
+  0xDF, 0x02,
+  {         }
+  0x33, 0xa0,
+  {         }
+  0x3C, 0x00,
+  {         }
+  0xe1, 0x67,
+  {         }
+../src/ov2640/ov2640cfg.h:453:2:
+  0xff, 0x01,
+  {         }
+  0xe0, 0x00,
+  {         }
+  0xe1, 0x00,
+  {         }
+  0xe5, 0x00,
+  {         }
+  0xd7, 0x00,
+  {         }
+  0xda, 0x00,
+  {         }
+  0xe0, 0x00,
+  {
+ };
+ }
+In file included from ../src/ov2640/ov2640.h:6,
+                 from ../src/ov2640/ov2640.c:1:
+../src/ov2640/../emio_sccb_cfg/emio_sccb_cfg.h:13:16: warning: 'gpiops_inst' defined but not used [-Wunused-variable]
+ static XGpioPs gpiops_inst; // PS �? GPIO 驱动实例
+                ^~~~~~~~~~~
+'Finished building: ../src/ov2640/ov2640.c'
+' '
+'Building target: cam2hdmi.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LE:/pynqz2cam/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bsplib/lib -o "cam2hdmi.elf"  ./src/vdma_api/vdma_api.o  ./src/ov2640/ov2640.o  ./src/emio_sccb_cfg/emio_sccb_cfg.o  ./src/dynclk/dynclk.o  ./src/display_ctrl_hdmi/display_ctrl.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cam2hdmi.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cam2hdmi.elf  |tee "cam2hdmi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  73452	   1688	  26512	 101652	  18d14	cam2hdmi.elf
+'Finished building: cam2hdmi.elf.size'
+' '
+18:29:47 **** Incremental Build of configuration Debug for project cam2hdmi_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 8357 E:/pynqz2cam/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_domain E:/pynqz2cam/cam2hdmi_system/Debug/system.bif
+sdcard_gen --xpfm E:/pynqz2cam/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif E:/pynqz2cam/cam2hdmi_system/Debug/system.bif --bitstream E:/pynqz2cam/cam2hdmi/_ide/bitstream/design_1_wrapper.bit --elf E:/pynqz2cam/cam2hdmi/Debug/cam2hdmi.elf,ps7_cortexa9_0
+creating BOOT.BIN using E:/pynqz2cam/cam2hdmi/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2019.2/bin/bootgen  -image E:/pynqz2cam/cam2hdmi_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

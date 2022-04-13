@@ -1,0 +1,312 @@
+18:07:07 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\pynqz2cam\temp_xsdb_launch_script.tcl
+18:07:08 INFO  : XSCT server has started successfully.
+18:07:08 INFO  : Successfully done setting XSCT server connection channel  
+18:07:08 INFO  : plnx-install-location is set to ''
+18:07:08 INFO  : Successfully done setting workspace for the tool. 
+18:07:08 INFO  : Successfully done query RDI_DATADIR 
+18:07:08 INFO  : Registering command handlers for Vitis TCF services
+18:09:16 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+18:09:51 INFO  : Checking for BSP changes to sync application flags for project 'cam2hdmi'...
+18:15:51 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\pynqz2cam\temp_xsdb_launch_script.tcl
+18:15:53 INFO  : XSCT server has started successfully.
+18:15:53 INFO  : Registering command handlers for Vitis TCF services
+18:15:53 INFO  : Successfully done setting XSCT server connection channel  
+18:15:53 INFO  : plnx-install-location is set to ''
+18:15:53 INFO  : Successfully done setting workspace for the tool. 
+18:15:53 INFO  : Successfully done query RDI_DATADIR 
+18:16:47 INFO  : Saving repository preferences.
+18:16:47 INFO  : plnx-install-location is set to ''
+18:17:39 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\pynqz2cam\temp_xsdb_launch_script.tcl
+18:17:40 INFO  : XSCT server has started successfully.
+18:17:40 INFO  : Successfully done setting XSCT server connection channel  
+18:17:40 INFO  : plnx-install-location is set to ''
+18:17:40 INFO  : Successfully done setting workspace for the tool. 
+18:17:41 INFO  : Registering command handlers for Vitis TCF services
+18:17:41 INFO  : Successfully done query RDI_DATADIR 
+18:19:53 INFO  : Checking for BSP changes to sync application flags for project 'cam2hdmi'...
+18:20:37 INFO  : Checking for BSP changes to sync application flags for project 'cam2hdmi'...
+18:21:19 INFO  : Checking for BSP changes to sync application flags for project 'cam2hdmi'...
+18:21:35 INFO  : Checking for BSP changes to sync application flags for project 'cam2hdmi'...
+18:26:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:26:17 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+18:26:17 INFO  : 'jtag frequency' command is executed.
+18:26:17 INFO  : Context for 'APU' is selected.
+18:26:17 INFO  : System reset is completed.
+18:26:20 INFO  : 'after 3000' command is executed.
+18:26:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+18:26:23 INFO  : FPGA configured successfully with bitstream "E:/pynqz2cam/cam2hdmi/_ide/bitstream/design_1_wrapper.bit"
+18:26:23 INFO  : Context for 'APU' is selected.
+18:26:23 INFO  : Hardware design information is loaded from 'E:/pynqz2cam/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:26:23 INFO  : 'configparams force-mem-access 1' command is executed.
+18:26:23 INFO  : Context for 'APU' is selected.
+18:26:23 INFO  : Sourcing of 'E:/pynqz2cam/cam2hdmi/_ide/psinit/ps7_init.tcl' is done.
+18:26:23 INFO  : 'ps7_init' command is executed.
+18:26:23 INFO  : 'ps7_post_config' command is executed.
+18:26:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:26:23 INFO  : The application 'E:/pynqz2cam/cam2hdmi/Debug/cam2hdmi.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:26:23 INFO  : 'configparams force-mem-access 0' command is executed.
+18:26:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1
+fpga -file E:/pynqz2cam/cam2hdmi/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/pynqz2cam/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/pynqz2cam/cam2hdmi/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/pynqz2cam/cam2hdmi/Debug/cam2hdmi.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:26:23 INFO  : Memory regions updated for context APU
+18:26:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:26:23 INFO  : 'con' command is executed.
+18:26:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:26:23 INFO  : Launch script is exported to file 'E:\pynqz2cam\.sdk\launch_scripts\single_application_debug\systemdebugger_cam2hdmi_system_standalone.tcl'
+18:27:16 INFO  : Disconnected from the channel tcfchan#6.
+18:27:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:27:22 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+18:27:22 INFO  : 'jtag frequency' command is executed.
+18:27:22 INFO  : Context for 'APU' is selected.
+18:27:22 INFO  : System reset is completed.
+18:27:25 INFO  : 'after 3000' command is executed.
+18:27:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+18:27:27 INFO  : FPGA configured successfully with bitstream "E:/pynqz2cam/cam2hdmi/_ide/bitstream/design_1_wrapper.bit"
+18:27:27 INFO  : Context for 'APU' is selected.
+18:27:28 INFO  : Hardware design information is loaded from 'E:/pynqz2cam/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:27:28 INFO  : 'configparams force-mem-access 1' command is executed.
+18:27:28 INFO  : Context for 'APU' is selected.
+18:27:28 INFO  : Sourcing of 'E:/pynqz2cam/cam2hdmi/_ide/psinit/ps7_init.tcl' is done.
+18:27:29 INFO  : 'ps7_init' command is executed.
+18:27:29 INFO  : 'ps7_post_config' command is executed.
+18:27:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:27:29 INFO  : The application 'E:/pynqz2cam/cam2hdmi/Debug/cam2hdmi.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:27:29 INFO  : 'configparams force-mem-access 0' command is executed.
+18:27:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1
+fpga -file E:/pynqz2cam/cam2hdmi/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/pynqz2cam/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/pynqz2cam/cam2hdmi/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/pynqz2cam/cam2hdmi/Debug/cam2hdmi.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:27:29 INFO  : Memory regions updated for context APU
+18:27:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:27:29 INFO  : 'con' command is executed.
+18:27:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:27:29 INFO  : Launch script is exported to file 'E:\pynqz2cam\.sdk\launch_scripts\single_application_debug\systemdebugger_cam2hdmi_system_standalone.tcl'
+18:27:58 INFO  : Disconnected from the channel tcfchan#7.
+18:27:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:27:59 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+18:27:59 INFO  : 'jtag frequency' command is executed.
+18:27:59 INFO  : Context for 'APU' is selected.
+18:27:59 INFO  : System reset is completed.
+18:28:02 INFO  : 'after 3000' command is executed.
+18:28:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+18:28:05 INFO  : FPGA configured successfully with bitstream "E:/pynqz2cam/cam2hdmi/_ide/bitstream/design_1_wrapper.bit"
+18:28:05 INFO  : Context for 'APU' is selected.
+18:28:05 INFO  : Hardware design information is loaded from 'E:/pynqz2cam/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:28:05 INFO  : 'configparams force-mem-access 1' command is executed.
+18:28:05 INFO  : Context for 'APU' is selected.
+18:28:05 INFO  : Sourcing of 'E:/pynqz2cam/cam2hdmi/_ide/psinit/ps7_init.tcl' is done.
+18:28:05 INFO  : 'ps7_init' command is executed.
+18:28:05 INFO  : 'ps7_post_config' command is executed.
+18:28:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:28:05 INFO  : The application 'E:/pynqz2cam/cam2hdmi/Debug/cam2hdmi.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:28:05 INFO  : 'configparams force-mem-access 0' command is executed.
+18:28:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1
+fpga -file E:/pynqz2cam/cam2hdmi/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/pynqz2cam/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/pynqz2cam/cam2hdmi/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/pynqz2cam/cam2hdmi/Debug/cam2hdmi.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:28:05 INFO  : Memory regions updated for context APU
+18:28:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:28:05 INFO  : 'con' command is executed.
+18:28:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:28:05 INFO  : Launch script is exported to file 'E:\pynqz2cam\.sdk\launch_scripts\single_application_debug\systemdebugger_cam2hdmi_system_standalone.tcl'
+18:29:13 INFO  : Disconnected from the channel tcfchan#8.
+18:29:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:29:14 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+18:29:14 INFO  : 'jtag frequency' command is executed.
+18:29:14 INFO  : Context for 'APU' is selected.
+18:29:14 INFO  : System reset is completed.
+18:29:17 INFO  : 'after 3000' command is executed.
+18:29:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+18:29:19 INFO  : FPGA configured successfully with bitstream "E:/pynqz2cam/cam2hdmi/_ide/bitstream/design_1_wrapper.bit"
+18:29:19 INFO  : Context for 'APU' is selected.
+18:29:19 INFO  : Hardware design information is loaded from 'E:/pynqz2cam/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:29:19 INFO  : 'configparams force-mem-access 1' command is executed.
+18:29:19 INFO  : Context for 'APU' is selected.
+18:29:19 INFO  : Sourcing of 'E:/pynqz2cam/cam2hdmi/_ide/psinit/ps7_init.tcl' is done.
+18:29:20 INFO  : 'ps7_init' command is executed.
+18:29:20 INFO  : 'ps7_post_config' command is executed.
+18:29:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:29:20 INFO  : The application 'E:/pynqz2cam/cam2hdmi/Debug/cam2hdmi.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:29:20 INFO  : 'configparams force-mem-access 0' command is executed.
+18:29:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1
+fpga -file E:/pynqz2cam/cam2hdmi/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/pynqz2cam/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/pynqz2cam/cam2hdmi/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/pynqz2cam/cam2hdmi/Debug/cam2hdmi.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:29:20 INFO  : Memory regions updated for context APU
+18:29:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:29:20 INFO  : 'con' command is executed.
+18:29:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:29:20 INFO  : Launch script is exported to file 'E:\pynqz2cam\.sdk\launch_scripts\single_application_debug\systemdebugger_cam2hdmi_system_standalone.tcl'
+18:29:46 INFO  : Checking for BSP changes to sync application flags for project 'cam2hdmi'...
+18:29:53 INFO  : Disconnected from the channel tcfchan#9.
+18:29:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:29:54 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+18:29:54 INFO  : 'jtag frequency' command is executed.
+18:29:54 INFO  : Context for 'APU' is selected.
+18:29:54 INFO  : System reset is completed.
+18:29:57 INFO  : 'after 3000' command is executed.
+18:29:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+18:30:00 INFO  : FPGA configured successfully with bitstream "E:/pynqz2cam/cam2hdmi/_ide/bitstream/design_1_wrapper.bit"
+18:30:00 INFO  : Context for 'APU' is selected.
+18:30:00 INFO  : Hardware design information is loaded from 'E:/pynqz2cam/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:30:00 INFO  : 'configparams force-mem-access 1' command is executed.
+18:30:00 INFO  : Context for 'APU' is selected.
+18:30:00 INFO  : Sourcing of 'E:/pynqz2cam/cam2hdmi/_ide/psinit/ps7_init.tcl' is done.
+18:30:00 INFO  : 'ps7_init' command is executed.
+18:30:00 INFO  : 'ps7_post_config' command is executed.
+18:30:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:30:00 INFO  : The application 'E:/pynqz2cam/cam2hdmi/Debug/cam2hdmi.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:30:00 INFO  : 'configparams force-mem-access 0' command is executed.
+18:30:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1
+fpga -file E:/pynqz2cam/cam2hdmi/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/pynqz2cam/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/pynqz2cam/cam2hdmi/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/pynqz2cam/cam2hdmi/Debug/cam2hdmi.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:30:00 INFO  : Memory regions updated for context APU
+18:30:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:30:00 INFO  : 'con' command is executed.
+18:30:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:30:00 INFO  : Launch script is exported to file 'E:\pynqz2cam\.sdk\launch_scripts\single_application_debug\systemdebugger_cam2hdmi_system_standalone.tcl'
+18:31:38 INFO  : Disconnected from the channel tcfchan#11.
+18:31:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:31:38 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+18:31:38 INFO  : 'jtag frequency' command is executed.
+18:31:38 INFO  : Context for 'APU' is selected.
+18:31:38 INFO  : System reset is completed.
+18:31:41 INFO  : 'after 3000' command is executed.
+18:31:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+18:31:43 INFO  : FPGA configured successfully with bitstream "E:/pynqz2cam/cam2hdmi/_ide/bitstream/design_1_wrapper.bit"
+18:31:43 INFO  : Context for 'APU' is selected.
+18:31:43 INFO  : Hardware design information is loaded from 'E:/pynqz2cam/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:31:43 INFO  : 'configparams force-mem-access 1' command is executed.
+18:31:43 INFO  : Context for 'APU' is selected.
+18:31:43 INFO  : Sourcing of 'E:/pynqz2cam/cam2hdmi/_ide/psinit/ps7_init.tcl' is done.
+18:31:44 INFO  : 'ps7_init' command is executed.
+18:31:44 INFO  : 'ps7_post_config' command is executed.
+18:31:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:31:44 INFO  : The application 'E:/pynqz2cam/cam2hdmi/Debug/cam2hdmi.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:31:44 INFO  : 'configparams force-mem-access 0' command is executed.
+18:31:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1
+fpga -file E:/pynqz2cam/cam2hdmi/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/pynqz2cam/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/pynqz2cam/cam2hdmi/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/pynqz2cam/cam2hdmi/Debug/cam2hdmi.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:31:44 INFO  : Memory regions updated for context APU
+18:31:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:31:44 INFO  : 'con' command is executed.
+18:31:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:31:44 INFO  : Launch script is exported to file 'E:\pynqz2cam\.sdk\launch_scripts\single_application_debug\systemdebugger_cam2hdmi_system_standalone.tcl'
+18:38:17 INFO  : Disconnected from the channel tcfchan#12.
